@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">        
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div>
+            <h1 id="title">VideogameAr Survey Form</h1>
+            <p id="description"><i>Thank you for being part of this community.</i></p>
+        </div>
+        <div class="contenedor-survey">
+            <form id="survey-form">
+                <div id="survey-op">
+                    <label for="name-label" class="labels">Name</label>
+                    <input id="name-label" class="inputs" placeholder="Enter your Name" type:"text" required>
+                    <label for="email-label" class="labels">E-mail</label>
+                    <input id="email-label" class="inputs" placeholder="Enter your E-mail" type:"email" required>
+                    <label for="number-label" class="labels">Age (Optional)</label>
+                    <input id="number-label" class="inputs" placeholder="Enter your Age" type:"number" min="8" max="99">
+                    <label for="dropdown" class="labels">On wich platform do you game?</label>
+                    <select id="dropdown" class="selectbox1" required>
+                        <option value="selectplatform">Select your Platform</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="playstation">Playstation</option>
+                        <option value="nintendo">Nintendo</option>
+                        <option value="pc">PC</option>
+                        <option value="mobile">Mobile Games</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <form>
+                        <fieldset class="labels">
+                            <legend>Would you recomend VideogameAr to a friend?</legend>
+                            <input id="Definitely" type="radio" name="question1" class="options1" value="Definitely">
+                            <label for="Definitely">Definitely</label><br>
+                            <input id="Maybe" type="radio" name="question1" class="options1" value="Maybe">
+                            <label for="Maybe">Maybe</label><br>
+                            <input id="No" type="radio" name="question1" class="options1" value="No">
+                            <label for="No">No :(</label><br>
+                        </fieldset>
+                    </form>
+                    <label id="favorite-feature" class="labels1">What is your favorite feature of VideogameAr?</label>
+                    <select id="favorite-feature" class="selectbox1" required>
+                        <option value="selectfeature">Select your feature</option>
+                        <option value="blogs">Blogs</option>
+                        <option value="gaming-pal">Find a gaming pal</option>
+                        <option value="discord-servers">Discord Servers</option>
+                        <option value="chat-room">Live chat room</option>
+                        <option value="photo-gallery">Photo gallery</option>
+                        <option value="news">News</option>
+                    </select>
+                    <label id="gaming-genres" class="labels">Choose your favorite gaming genres! (Choose as many as you like!)</label>
+                    <div class="gaming-genres">
+                        <input id="action" type="checkbox" name="gaming-genres" value="action">
+                        <label for="action">Action</label><br>
+                        <input id="adventure" type="checkbox" name="gaming-genres" value="adventure">
+                        <label for="adventure">Adventure</label><br>
+                        <input id="fps" type="checkbox" name="gaming-genres" value="fps">
+                        <label for="fps">First Person Shooter</label><br>
+                        <input id="horror" type="checkbox" name="gaming-genres" value="horror">
+                        <label for="horror">Horror</label><br>
+                        <input id="co-op" type="checkbox" name="gaming-genres" value="co-op">
+                        <label for="co-op">Cooperative</label><br>
+                        <input id="MMORPG"  type="checkbox" name="gaming-genres" value="MMORPG">
+                        <label for="MMORPG">MMORPG</label><br>
+                        <input id="survival" type="checkbox" name="gaming-genres" value="survival">
+                        <label for="survival">Survival</label><br>
+                        <input id="sim" type="checkbox" name="gaming-genres" value="sim">
+                        <label for="sim">Simulators</label><br>
+                        <input id="management" type="checkbox" name="gaming-genres" value="management">
+                        <label for="management">Management</label><br>
+                        <input id="others" type="checkbox" name="gaming-genres" value="others">
+                        <label for="others">Others</label>
+                    </div>
+                    <label for="help-us" class="labels">Help us imporve VideogameAr</label>
+                    <textarea id="help-us" name="suggestions" rows="20" cols="50" class="suggestions">Write here...</textarea>
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+        </div>    
+      </main>
+</body>
+</html>
